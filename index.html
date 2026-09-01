@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kareem Abiodun Salia | Web Developer &amp; UI/UX Designer</title>
+    <meta name="description" content="Portfolio of Kareem Abiodun Salia — Web Developer, UI/UX Designer and Graphic Designer building responsive websites and intuitive digital experiences.">
+    <meta name="author" content="Kareem Abiodun Salia">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kareem Abiodun Salia | Web Developer &amp; UI/UX Designer">
+    <meta property="og:description" content="I build responsive websites and intuitive digital experiences that combine clean code with thoughtful design.">
+    <meta property="og:image" content="assets/images/profile.svg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+
+    <script>
+        (function () {
+            var savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light" || savedTheme === "dark") {
+                document.documentElement.setAttribute("data-theme", savedTheme);
+            }
+        })();
+    </script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#home">Skip to main content</a>
+
+
+    <!-- Header / Navigation                                 -->
+
+    <header class="site-header">
+        <div class="container nav-wrap">
+
+            <a href="#home" class="logo" aria-label="Kareem Salia — back to top">kareem<span class="logo-dot">.</span>dev</a>
+
+            <nav id="navMenu" class="nav-menu" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home"      class="nav-link active">Home</a></li>
+                    <li><a href="#about"     class="nav-link">About</a></li>
+                    <li><a href="#skills"    class="nav-link">Skills</a></li>
+                    <li><a href="#projects"  class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#resume"    class="nav-link">Resume</a></li>
+                    <li><a href="#contact"   class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">                <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to light theme">
+                    <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="hamburger" id="hamburger"
+                        aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- Hero / Home Section                                 -->
+
+        <section id="home" class="hero">
+            <div class="hero-blobs" aria-hidden="true">
+                <span class="blob blob-1"></span>
+                <span class="blob blob-2"></span>
+            </div>
+
+            <div class="container hero-wrap">
+
+                <!-- Text side -->
+                <div class="hero-content reveal">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Kareem Abiodun Salia</h1>
+
+                    <p class="hero-roles">
+                        <span>Web Developer</span>
+                        <span class="role-divider" aria-hidden="true">|</span>
+                        <span>UI/UX Designer</span>
+                        <span class="role-divider" aria-hidden="true">|</span>
+                        <span>Graphic Designer</span>
+                    </p>
+
+                    <p class="hero-intro">
+                        I build responsive websites and intuitive digital experiences
+                        that combine clean code with thoughtful design.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Projects
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    
+                        <a href="resume/Kareem Salia Abiodun CV.pdf" download class="btn btn-outline">
+                            <i class="fa-solid fa-download" aria-hidden="true"></i>
+                            Download Resume
+                        </a>
+                    </div>
+                    <ul class="socials" aria-label="Social media links">
+                        <li><a class="social-link" href="https://github.com/Shalom-lite" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                        <li><a class="social-link" href="https://linkedin.com/in/salia-kareem-abiodun-884bb0304" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li><a class="social-link" href="https://x.com/Shalom1124" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+                        <li><a class="social-link" href="https://www.instagram.com/saliaabiodun11/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- Image side -->
+                <figure class="hero-figure reveal" style="--reveal-delay:.15s">
+                    <div class="hero-img-ring">
+                        
+                        <img src="assets/images/profile.png"
+                             alt="Portrait placeholder for Kareem Abiodun Salia, web developer and designer"
+                             width="512" height="512">
+                    </div>
+
+                    <span class="float-badge fb-1" aria-hidden="true"><i class="fa-brands fa-html5"></i></span>
+                    <span class="float-badge fb-2" aria-hidden="true"><i class="fa-brands fa-css3-alt"></i></span>
+                    <span class="float-badge fb-3" aria-hidden="true"><i class="fa-brands fa-js"></i></span>
+                    <span class="float-badge fb-4" aria-hidden="true"><i class="fa-brands fa-php"></i></span>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- About Section                                       -->
+
+        <section id="about" class="section about">
+            <div class="container">
+
+                <div class="section-head reveal">
+                    <span class="section-eyebrow">Get to know me</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+
+                <div class="about-grid">
+
+                    <!-- Written introduction -->
+                    <div class="about-text reveal">
+                        <p>
+                            I'm Kareem Abiodun Salia, a frontend-focused developer and designer who enjoys
+                            turning ideas into clean, functional websites. I care about writing simple,
+                            readable code just as much as I care about how a product looks and feels.
+                        </p>
+                        <p>
+                            My work sits at the intersection of development and design: I build responsive
+                            interfaces with HTML, CSS, JavaScript and PHP, and I design layouts that are
+                            easy to use on any screen size. I like solving problems step by step and I am
+                            always learning modern tools and techniques.
+                        </p>
+
+                        <!-- Career objective -->
+                        <div class="about-objective">
+                            <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+                            <p>
+                                <strong>Career objective:</strong> to grow as a web developer and UI/UX
+                                designer by building real digital products, collaborating with experienced
+                                teams, and continuously improving my craft.
+                            </p>
+                        </div>
+
+                        <!-- Professional interests -->
+                        <div class="interests">
+                            <span class="interest-chip"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i> Responsive Design</span>
+                            <span class="interest-chip"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i> Problem Solving</span>
+                            <span class="interest-chip"><i class="fa-solid fa-cubes" aria-hidden="true"></i> Digital Products</span>
+                            <span class="interest-chip"><i class="fa-solid fa-code" aria-hidden="true"></i> Clean Code</span>
+                            <span class="interest-chip"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Continuous Learning</span>
+                        </div>
+                    </div>
+
+                    <!-- "What I do" cards -->
+                    <div class="about-cards reveal" style="--reveal-delay:.15s">
+                        <article class="mini-card">
+                            <span class="mini-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></span>
+                            <h3>Web Development</h3>
+                            <p>Building fast, accessible websites with HTML5, CSS3, JavaScript and PHP.</p>
+                        </article>
+                        <article class="mini-card">
+                            <span class="mini-icon"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i></span>
+                            <h3>UI/UX Design</h3>
+                            <p>Designing clear interfaces and user flows that feel natural to use.</p>
+                        </article>
+                        <article class="mini-card">
+                            <span class="mini-icon"><i class="fa-solid fa-palette" aria-hidden="true"></i></span>
+                            <h3>Graphic Design</h3>
+                            <p>Creating visuals, branding elements and layouts with strong typography.</p>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Skills Section                                      -->
+
+        <section id="skills" class="section skills">
+            <div class="container">
+
+                <div class="section-head reveal">
+                    <span class="section-eyebrow">What I work with</span>
+                    <h2 class="section-title">Skills &amp; Tools</h2>
+                    <p class="section-subtitle">The technologies I use to bring ideas to life.</p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card reveal">
+                        <div class="skill-card-head">
+                            <span class="skill-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></span>
+                            <h3>Frontend</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-chip"><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML5</li>
+                            <li class="skill-chip"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS3</li>
+                            <li class="skill-chip"><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</li>
+                            <li class="skill-chip"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Responsive Design</li>
+                            <li class="skill-chip"><i class="fa-brands fa-bootstrap" aria-hidden="true"></i> Bootstrap</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal" style="--reveal-delay:.1s">
+                        <div class="skill-card-head">
+                            <span class="skill-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></span>
+                            <h3>Backend</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-chip"><i class="fa-brands fa-php" aria-hidden="true"></i> PHP</li>
+                            <li class="skill-chip"><i class="fa-solid fa-database" aria-hidden="true"></i> MySQL</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal" style="--reveal-delay:.2s">
+                        <div class="skill-card-head">
+                            <span class="skill-icon"><i class="fa-solid fa-toolbox" aria-hidden="true"></i></span>
+                            <h3>Tools</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-chip"><i class="fa-brands fa-git-alt" aria-hidden="true"></i> Git</li>
+                            <li class="skill-chip"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</li>
+                            <li class="skill-chip"><i class="fa-solid fa-terminal" aria-hidden="true"></i> VS Code</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card reveal" style="--reveal-delay:.3s">
+                        <div class="skill-card-head">
+                            <span class="skill-icon"><i class="fa-solid fa-pen-nib" aria-hidden="true"></i></span>
+                            <h3>Design</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="skill-chip"><i class="fa-solid fa-object-group" aria-hidden="true"></i> UI/UX Design</li>
+                            <li class="skill-chip"><i class="fa-solid fa-shapes" aria-hidden="true"></i> Graphic Design</li>
+                            <li class="skill-chip"><i class="fa-brands fa-figma" aria-hidden="true"></i> Figma</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section                                    -->
+
+        <section id="projects" class="section projects">
+            <div class="container">
+
+                <div class="section-head reveal">
+                    <span class="section-eyebrow">My work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">A selection of web applications I have designed and built.</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <!-- TODO: replace the "#" links below with your live demo URL and GitHub repo -->
+                    <article class="project-card reveal">
+                        <div class="project-image">
+                            <img src="assets/images/Dry Cleaning design.png"
+                                 alt="Browser mockup of the Dry Cleaning Management System interface"
+                                 width="800" height="520" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Dry Cleaning Management System</h3>
+                            <p class="project-desc">
+                                A web-based management platform designed for dry cleaning businesses,
+                                allowing customers to explore services, schedule services, manage
+                                bookings, and support online payments.
+                            </p>
+                            <ul class="tech-badges" aria-label="Technologies used">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://dribbble.com/shots/27687524-Dry-Cleaning-Management-System" class="btn btn-sm btn-primary">View Project</a>
+                                <a href="https://github.com/Shalom-lite/Dry-Cleaning-Management-System" class="btn btn-sm btn-outline"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <!-- TODO: replace the "#" links below with your live demo URL and GitHub repo -->
+                    <article class="project-card reveal" style="--reveal-delay:.1s">
+                        <div class="project-image">
+                            <img src="assets/images/Rehoboth design.png"
+                                 alt="Browser mockup of the Rehoboth Veterinary and Pet Management System interface"
+                                 width="800" height="520" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Rehoboth Veterinary &amp; Pet Management System</h3>
+                            <p class="project-desc">
+                                A web platform for a veterinary and pet business where customers can
+                                explore animal feeds and pets, request veterinary services, and
+                                schedule appointments.
+                            </p>
+                            <ul class="tech-badges" aria-label="Technologies used">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://dribbble.com/shots/27403061-Rehoboth-veterinary" class="btn btn-sm btn-primary">View Project</a>
+                                <a href="https://github.com/Shalom-lite/Rehoboth-Veterinary-Pet-Management-System" class="btn btn-sm btn-outline"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <!-- TODO: replace the "#" links below with your live demo URL and GitHub repo -->
+                    <article class="project-card reveal" style="--reveal-delay:.2s">
+                        <div class="project-image">
+                            <img src="assets/images/Barbing Salon design.png"
+                                 alt="Browser mockup of the Barbing Salon Management System admin dashboard"
+                                 width="800" height="520" loading="lazy">
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Barbing Salon Management System</h3>
+                            <p class="project-desc">
+                                A responsive salon management website designed to showcase services,
+                                support customer bookings, and provide an administrative dashboard
+                                for business management.
+                            </p>
+                            <ul class="tech-badges" aria-label="Technologies used">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                            </ul>
+                            <div class="project-links">
+                                <a href="https://dribbble.com/shots/27403058-Luxe-cuts-premium-landing-page" class="btn btn-sm btn-primary">View Project</a>
+                                <a href="https://github.com/Shalom-lite/Barbing-Salon-Management-System" class="btn btn-sm btn-outline"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section                                   -->
+
+        <section id="education" class="section education">
+            <div class="container">
+
+                <div class="section-head reveal">
+                    <span class="section-eyebrow">Learning journey</span>
+                    <h2 class="section-title">Education</h2>
+                </div>
+
+                <div class="timeline">
+
+                    
+                    <article class="timeline-item reveal">
+                        <span class="timeline-dot" aria-hidden="true"></span>
+                        <span class="timeline-date"> 2025 </span>
+                        <h3>Undergraduate Student</h3>
+                        <p class="timeline-place">BSc Computer Science &mdash; Taraba State University</p>
+                        <p class="timeline-desc">
+                            Currently pursuing my undergraduate studies while building practical
+                            projects in web development and design.
+                        </p>
+                    </article>
+
+
+                        <span class="timeline-dot" aria-hidden="true"></span>
+                        <span class="timeline-date">Ongoing</span>
+                        <h3>Self-Directed Learning</h3>
+                        <p class="timeline-place">Web Development &amp; UI/UX Design</p>
+                        <p class="timeline-desc">
+                            Continuously learning through hands-on projects, covering modern HTML/CSS,
+                            JavaScript, PHP &amp; MySQL, responsive design patterns and UI/UX fundamentals.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section                                      -->
+
+        <section id="resume" class="section resume">
+            <div class="container">
+
+                <div class="section-head reveal">
+                    <span class="section-eyebrow">Want the full picture?</span>
+                    <h2 class="section-title">My Resume</h2>
+                </div>
+
+               
+
+                <div class="resume-card reveal">
+                    <span class="resume-icon" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></span>
+                    <p class="resume-text">
+                        Download my resume for a summary of my education, technical skills
+                        and selected projects &mdash; all in one document.
+                    </p>
+                    <a href="resume/Kareem Salia Abiodun CV.pdf" download class="btn btn-primary">
+                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                        Download Resume
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section                                     -->
+
+        <section id="contact" class="section contact">
+            <div class="container">
+
+                <div class="section-head reveal">
+                    <span class="section-eyebrow">Let's work together</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">
+                        Have a project in mind or just want to say hello? My inbox is always open.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-info reveal">
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <span class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <a href="mailto:saliaabiodun24@gmail.com" class="contact-value">saliaabiodun24@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+                                <div>
+                                    <span class="contact-label">Phone</span>
+                                    <a href="tel:+2349030218963" class="contact-value">+234 903 021 8963</a>
+                                </div>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon"><i class="fa-brands fa-github" aria-hidden="true"></i></span>
+                                <div>
+                                    <span class="contact-label">GitHub</span>
+                                    <a href="https://github.com/Shalom-lite" target="_blank" rel="noopener noreferrer" class="contact-value">github.com</a>
+                                </div>
+                            </li>
+                            <li class="contact-item">
+                                <span class="contact-icon"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></span>
+                                <div>
+                                    <span class="contact-label">LinkedIn</span>
+                                    <a href="https://linkedin.com/in/salia-kareem-abiodun-884bb0304" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="socials" aria-label="Social media links">
+                            <li><a class="social-link" href="https://github.com/Shalom-lite" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                            <li><a class="social-link" href="https://linkedin.com/in/salia-kareem-abiodun-884bb0304" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                            <li><a class="social-link" href="https://x.com/Shalom1124" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+                            <li><a class="social-link" href="https://www.instagram.com/saliaabiodun11/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact form.               -->
+                    <form id="contactForm" class="contact-form reveal" style="--reveal-delay:.15s"
+                          action="contact.php" method="post" novalidate>
+
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. Kareem Salia"
+                                   minlength="2" maxlength="80" autocomplete="name" required
+                                   aria-describedby="nameError">
+                            <small class="error-message" id="nameError" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="e.g. saliaabiodun24@gmail.com"
+                                   maxlength="120" autocomplete="email" required
+                                   aria-describedby="emailError">
+                            <small class="error-message" id="emailError" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this about?"
+                                   minlength="3" maxlength="120" required
+                                   aria-describedby="subjectError">
+                            <small class="error-message" id="subjectError" aria-live="polite"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                      placeholder="Tell me about your project or question..."
+                                      minlength="10" maxlength="1500" required
+                                      aria-describedby="messageError"></textarea>
+                            <small class="error-message" id="messageError" aria-live="polite"></small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            Send Message
+                        </button>
+
+                        
+                        <p class="form-status" id="formStatus" role="status" aria-live="polite" hidden></p>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================================================== -->
+    <!-- Footer                                              -->
+    <!-- ================================================== -->
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <a href="#home" class="logo">kareem<span class="logo-dot">.</span>dev</a>
+
+            <ul class="socials" aria-label="Social media links">
+                <li><a class="social-link" href="https://github.com/Shalom-lite" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                <li><a class="social-link" href="https://linkedin.com/in/salia-kareem-abiodun-884bb0304" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li><a class="social-link" href="https://x.com/Shalom1124" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+                <li><a class="social-link" href="https://www.instagram.com/saliaabiodun11/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+
+            <p class="footer-copy">
+                &copy; <span id="year">2026</span> Kareem Abiodun Salia.
+                Built with HTML, CSS &amp; JavaScript.
+            </p>
+        </div>
+    </footer>
+
+    <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
