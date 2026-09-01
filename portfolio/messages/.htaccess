@@ -1,3 +1,0 @@
-# Blocks web access to stored contact messages (Apache servers).
-# Visitors should never be able to open /messages/contact-log.txt in a browser.
-Require all denied
